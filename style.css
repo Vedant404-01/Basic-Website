@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+#main {
+    height: 100vw;
+    width: 100vw;
+    background-color: rgb(148, 148, 148);
+}
+#nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    position: absolute;
+    animation-name: menu;
+    animation-duration: 1s;
+}
+@keyframes menu {
+    from {
+        top: -10%;
+    }
+    to {
+        top: 0.2%;
+    }
+}
+#nav-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav h3 {
+    font-size: 17px;
+    border: 1.5px solid black;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+#nav i {
+    font-size: 16px;
+    border: 1.5px solid black;
+    font-weight: 500;
+    padding: 5px 8px;
+    border-radius: 50px;
+}
+#nav h1{
+    font-weight: 540;
+    font-size: 22px;
+    transform: uppercase;
+}
+#nav button {
+    padding: 7px 12px;
+    border-radius: 50px;
+    border: 1.5px solid #000;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+button > a {
+    text-decoration: none;
+    color: #000;
+}
+#btn2 {
+    border: none ;
+    color: #fff;
+    background-color: orangered;
+}
+#main>h1{
+    font-size: 80px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 45%;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+    color: RGB(62, 106, 70);
+    animation-name: h1-text;
+    animation-duration: 1s;
+}
+@keyframes h1-text {
+    from{
+        top:-10%;
+    }
+    to{
+        top: 45%;
+    }
+}
+#img {
+    height: 450px;
+    width: 500px;
+    display: flex;
+}
+#img-1 {
+    height: 480px;
+    width: 350px;
+    border-radius: 20px;
+    position: absolute;
+    top: 15%;
+    left: 50px;
+    object-fit: cover;
+    animation-name: move;
+    animation-duration: 2s;
+}
+@keyframes move {
+    from {
+        left:0;
+    }
+    to {
+        left: 49px;
+    }
+}
+#img-2 {
+    height: 480px;
+    width: 350px;
+    border-radius: 20px;
+    position: absolute;
+    left: 480px;
+    top: 15%;
+    object-fit: cover;
+    animation-name: move-1;
+    animation-duration: 3s;
+}
+@keyframes move-1 {
+    from {
+        left:0;
+    }
+    to {
+        left: 35.4%;
+    }
+}
+#img-3 {
+    height: 480px;
+    width: 350px;
+    border-radius: 20px;
+    position: absolute;
+    left: 67%;
+    top: 15%;
+    object-fit: cover;
+    animation-name: move-2;
+    animation-duration: 3s;
+}
+@keyframes move-2 {
+    from {
+        left:0;
+    }
+    to {
+        left: 67%;
+    }
+}
+#main>h3 {
+    height: 100vh;
+    width: 100vw;
+    font-size: 200%;
+    font-weight: 180px;
+    position: absolute;
+    left: 40%;
+    top: 93%;
+}
